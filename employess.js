@@ -12,7 +12,7 @@ var employees=[
     {"empcode":1008,"name":"zaheer","department":"it","salary":65000,"location":"ekm"}
 ]
 
-// console.log(employees.map(o=>o.name));
+console.log(employees.map(o=>o.name));
 // console.log(employees.reduce((o1,o2)=>o1.salary>o2.salary?o1:o2));
 // console.log(employees.filter(o=>o.location=="tvm").map(o=>o.name));
 
@@ -23,4 +23,7 @@ employees.sort((o1,o2)=>o2.salary - o1.salary)
 
 dep_count={}
 employees.map(o=>o.department).map(d=>d in dep_count?dep_count[d]+=1:dep_count[d]=1)
-console.log(dep_count);
+// console.log(dep_count);
+
+var list=employees.filter((e)=>e.salary>50000).map((m)=>m.name.toUpperCase())
+console.log(list);

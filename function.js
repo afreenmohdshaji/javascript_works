@@ -13,26 +13,27 @@ function nthDigitMax(num1,num2){
 // console.log(nthDigitMax(127,872));
 
 
-function isPrime(num) {
+function isPrime(num){
     let isPrimeNum=true
-    for(let i=2;i<num;i++){
+    for(let i=2;i<=num;i++){
         if(num%i==0){
-            isPrimeNum=false
-            break 
+            isPrime=false
+            break
         }
     }
     return isPrimeNum
 }
 
+
 // console.log(isPrime(4));
 
-function nextPrime(num) {
+function nextPrime(num){
     let nextNumber=num+1
-    while (!isPrime(nextNumber)) {
+    while(!isPrime(nextNumber)){
         nextNumber++
     }
     return nextNumber
 }
 
-console.log(nextPrime(5));
+console.log(nextPrime(2));
 

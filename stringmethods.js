@@ -6,7 +6,7 @@ console.log(text.toLowerCase());
 console.log(text.toUpperCase());
 console.log(text.length);
 console.log(text.charAt(8));
-console.log(text.indexOf("a"));
+console.log(text.indexOf("p"));
 console.log(text.startsWith("Lu"));
 
 
